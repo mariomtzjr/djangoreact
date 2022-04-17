@@ -37,6 +37,7 @@ const AddMovie = ({ onAdd }) => {
 
   const onUpdate = (id) => {
     let item = { name };
+    console.log("onUpdate: " + { name })
     Api.patch(`/${id}/`, item).then((res) => refreshMovies());
   };
 
